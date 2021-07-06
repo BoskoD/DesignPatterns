@@ -23,7 +23,7 @@ namespace FlixOne.InventoryManagementClient
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            // Add application services.
+            // Register CRoot
             services.AddTransient<IUserInterface, ConsoleUserInterface>();
             services.AddTransient<ICatalogService, CatalogService>();
             services.AddTransient<IInventoryCommandFactory, InventoryCommandFactory>();
