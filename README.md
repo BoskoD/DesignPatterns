@@ -8,3 +8,7 @@ Source: https://refactoring.guru/design-patterns
 
 ##### - Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing. https://refactoring.guru/design-patterns/observer
 
+#### - Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. https://refactoring.guru/design-patterns/factory-method
+
+#### - Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying their concrete classes. https://refactoring.guru/design-patterns/abstract-factory
+
