@@ -11,10 +11,10 @@ namespace FlixOne.InventoryManagementTests
         public void HelpCommand_Successful()
         {
             var expectedInterface = new Helpers.TestUserInterface(
-                 new List<System.Tuple<string, string>>(),
-                 new List<string>
-                 {
-                     "USAGE:",
+                new List<System.Tuple<string, string>>(),
+                new List<string>
+                {
+                    "USAGE:",
                     "\taddinventory (a)",
                     "\tgetinventory (g)",
                     "\tupdatequantity (u)",
@@ -42,18 +42,17 @@ namespace FlixOne.InventoryManagementTests
                     "\t-3",
                     "\t3 removed from quantity",
                     ""
-                 },
-                 new List<string>()
-                );
+                },
+                new List<string>()
+            );
 
+            // create an instance of the command
             var command = new HelpCommand(expectedInterface);
 
             var (wasSuccessful, shouldQuit) = command.RunCommand();
 
-            Assert.IsFalse(shouldQuit, "Help is not terminating command.");
+            Assert.IsFalse(shouldQuit, "Help is not a terminating command.");
             Assert.IsTrue(wasSuccessful, "Help did not complete Successfully.");
-
-            Assert.Inconclusive("HelpCommand_Successful not implemented yet");
         }
     }
 }
